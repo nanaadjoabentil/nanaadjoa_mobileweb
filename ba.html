@@ -14,6 +14,12 @@
       <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
       </script>
 
+ <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/sidebar.css">
+
       
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
@@ -39,10 +45,19 @@
   <script src="js/app/app.js"></script>
   <script src="js/app/bootstrap.js"></script>
   <script src="js/lib/jquery.mobile.js"></script>
+  <script src="js/sidebar.js"></script>
 </head>
 <body>
 
- 
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html"> Homepage</a>
+    <a href="ba.html">Business Administration</a>
+    <a href="mis.html">Management Information Systems</a>
+    <a href="cs.html">Computer Science</a>
+    <a href="engineering.html">Engineering</a>
+    <a href="javascript:void(0)" onclick="closeNav()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+  </div>
     <div data-role="page">
 
     	<div data-role="header">
@@ -58,8 +73,8 @@
       <ul class="right">
         <li><a href="sass.html"><i class="material-icons">search</i></a></li>
         <li><a href="ba.html"><i class="material-icons">refresh</i></a></li>
-         <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li> 
-      </ul>
+         <li><a href="#" onclick="openNav()"><i class="material-icons">menu</i></a></li> 
+        </ul>
         <ul class="left">
             <li><a href="index.html" target="_self"><i class="material-icons">arrow_back</i></a></li>
              <li><a href="cs.html" target="_self"><i class="material-icons">arrow_forward</i></a></li>

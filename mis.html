@@ -4,15 +4,24 @@
 <head>
 	<title>Management Information Systems</title>
 	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
-      <!--including materialize framework -->
-      <link rel = "stylesheet"
-         href = "https://fonts.googleapis.com/icon?family=Material+Icons">
-      <link rel = "stylesheet"
-         href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
-      <script type = "text/javascript"
-         src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
-      </script>
+  <!--including materialize framework -->
+  <link rel = "stylesheet"
+  href = "https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel = "stylesheet"
+  href = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+  <script type = "text/javascript"
+  src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js">
+  </script>
+
+
+
+  <!--COPY THIS-->
+  <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Cabin:700' rel='stylesheet' type='text/css'>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/sidebar.css">
 
 
 
@@ -20,6 +29,9 @@
 
   <link rel="stylesheet"  href="css/jquery.mobile.structure.css" />
   <link rel="stylesheet" href="css/jquery.mobile.theme.css" />
+
+
+
   <!-- <link rel="stylesheet" href="css/index.css" /> -->
 
   <script>
@@ -40,67 +52,87 @@
   <script src="js/app/app.js"></script>
   <script src="js/app/bootstrap.js"></script>
   <script src="js/lib/jquery.mobile.js"></script>
+
+
+  <!--COPY THIS-->
+  <script src="js/sidebar.js"></script>
+
+
+
 </head>
 <body>
 
-	<div data-role="page">
+  <!--COPY THIS-->
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="index.html"> Homepage</a>
+    <a href="ba.html">Business Administration</a>
+    <a href="mis.html">Management Information Systems</a>
+    <a href="cs.html">Computer Science</a>
+    <a href="engineering.html">Engineering</a>
+    <a href="javascript:void(0)" onclick="closeNav()"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
+  </div>
 
-    	<div data-role="header">
-    		<p style="color:white; font-size:100%"> Welcome to Ashesi!</p>
-    	</div><!-- /header -->
 
-    	<div data-role="content">
-        <img src="logo.png" width="95%" height="10%">     
+  <div data-role="page">
 
- <nav>
-    <div class="nav-wrapper">
-      <ul class="right">
-        <li><a href="http://www.ashesi.edu.gh"><i class="material-icons">search</i></a></li>
-        <li><a href="index.html"><i class="material-icons">refresh</i></a></li>
-         <li><a href="mobile.html"><i class="material-icons">more_vert</i></a></li> 
-      </ul>
-        <ul class="left">
-            <li><a href="ba.html" target="_self"><i class="material-icons">arrow_back</i></a></li>
-             <li><a href="cs.html" target="_self"><i class="material-icons">arrow_forward</i></a></li>
+   <div data-role="header">
+    <p style="color:white; font-size:100%"> Welcome to Ashesi!</p>
+  </div><!-- /header -->
+
+  <div data-role="content">
+    <img src="logo.png" width="95%" height="10%">     
+    <nav>
+      <div class="nav-wrapper">
+        <ul class="right">
+          <li><a href="http://www.ashesi.edu.gh"><i class="material-icons">search</i></a></li>
+          <li><a href="index.html"><i class="material-icons">refresh</i></a></li>
+          
+          <!--COPY THIS-->
+          <li><a href="#" onclick="openNav()"><i class="material-icons">menu</i></a></li> 
         </ul>
-    </div>
-            </nav>
-        
+        <ul class="left">
+          <li><a href="ba.html" target="_self"><i class="material-icons">arrow_back</i></a></li>
+          <li><a href="cs.html" target="_self"><i class="material-icons">arrow_forward</i></a></li>
+        </ul>
+      </div>
+    </nav>
 
-	<h5 style="color: red"> Management Information Systems </h5>
 
-	<br>
+    <h5 style="color: red"> Management Information Systems </h5>
 
-	<p> Management Information Systems is a combination of Computer Science and Business Administration.
-		Our students who major in M.I.S. get the best of both worlds, as they get to study things in both Computer Science and Business Administration.
-		M.I.S. is intended to shape our students into managers who can do both computer science and business adminstration projects and oversee projects on both sides as well.
-		You can find out more from our page: <a href="http://www.ashesi.edu.gh/academics/business-administration/management-information-systems-courses.html" target="_self"> Management Information Systems Courses</a>
+    <br>
 
-	</p>
-<br>
+    <p> Management Information Systems is a combination of Computer Science and Business Administration.
+      Our students who major in M.I.S. get the best of both worlds, as they get to study things in both Computer Science and Business Administration.
+      M.I.S. is intended to shape our students into managers who can do both computer science and business adminstration projects and oversee projects on both sides as well.
+      You can find out more from our page: <a href="http://www.ashesi.edu.gh/academics/business-administration/management-information-systems-courses.html" target="_self"> Management Information Systems Courses</a>
 
-	<h5 style="color:blue">Some of the courses M.I.S Majors do are:</h5>
+    </p>
+    <br>
 
-	<nav>Operations Management</nav>
-	<nav>Web Technologies</nav>
-	<nav>Software Engineering</nav>
-	<nav>Financial Accounting</nav>
-	<nav>Competitive Strategy</nav>
+    <h5 style="color:blue">Some of the courses M.I.S Majors do are:</h5>
 
-<br>
-	<a href="cs.html" target="_self"> Visit C.S. page</a>
-	<br>
-	<br>
-	<a href="ba.html" target="_self"> Previous Page: Business Administration </a>   
+    <nav>Operations Management</nav>
+    <nav>Web Technologies</nav>
+    <nav>Software Engineering</nav>
+    <nav>Financial Accounting</nav>
+    <nav>Competitive Strategy</nav>
 
-	<br>
-	<br>
+    <br>
+    <a href="cs.html" target="_self"> Visit C.S. page</a>
+    <br>
+    <br>
+    <a href="ba.html" target="_self"> Previous Page: Business Administration </a>   
 
-	<div data-role="footer">
-    		<h6>Content by &copy Nana Adjoa Bentil, 2017</h6>
-    	</div><!-- /footer -->
+    <br>
+    <br>
 
-</div>
+    <div data-role="footer">
+      <h6>Content by &copy Nana Adjoa Bentil, 2017</h6>
+    </div><!-- /footer -->
+
+  </div>
 </div>
 </body>
 </html>
