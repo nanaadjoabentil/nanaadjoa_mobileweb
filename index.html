@@ -41,11 +41,6 @@
 
   </head>
   <body>
-<<<<<<< HEAD
-
-=======
- 
->>>>>>> 00880794f206082643f4845eba3916b84dcd9c0e
 
     <div data-role="page">
 
@@ -55,17 +50,21 @@
 
     	<div data-role="content">
         <img src="logo.png" width="100%" height="10%">
-			<div>
-			  <!-- <nav> -->
-			    <ul>
-			      <li><a href = 'index.html' target="_self"> Homepage </a>  </li>
-			      <li><a href = 'ba.html' target="_self"> Business Administration  </a></li>
-			      <li><a href = 'cs.html' target="_self"> Computer Science  </a></li>
-			      <li><a href = 'mis.html' target="_self"> Management Information Systems  </a></li>
-			      <li><a href = 'engineering.html' target="_self"> Engineering </a></li>
-			    </ul>
-			 <!--  </nav> -->
-			</div>
+			
+
+ <nav>
+    <div class="nav-wrapper">
+      <!-- <a href="#" class="brand-logo">Logo</a>-->
+        <!-- <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a -->
+       <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="ba.html">Business Administration</a></li>
+        <li><a href="mis.html">Management Information Systems</a></li>
+        <li><a href="cs.html">Computer Science</a></li>
+        <li><a href="engineering.html">Engineering</a></li>
+      </ul>
+    </div>
+  </nav>
+        
 
 	<h5 style="color: red"> Homepage </h5>
 
@@ -75,18 +74,16 @@
         <p> Currently, Ashesi offers 6 majors: 3 in engineering and three completely different ones. </p>
         <p> They are: Mechanical Engineering, Computer Engineering, Electrical/Electronic Engineering, Computer Science, Management Information Systems and Business Administration </p>
         <p> Aside from all of the courses required by the various majors, Ashesi offers mandatory courses in math and science, liberal arts, leadership and entrepreneurship to help its students get a head start after graduation </p>
-        <p> See the ashesi website <a href="www.ashesi.edu.gh" target="_self"> here </a></p>
+        <p> See the ashesi website <a href="http://www.ashesi.edu.gh" target="_self"> here </a></p>
 
-<<<<<<< HEAD
+
         <p style="color: blue"> View the pages for our various majors here </p>
-=======
-        <h6 style="color: blue"> View the pages for our various majors here </h6>
->>>>>>> 00880794f206082643f4845eba3916b84dcd9c0e
-        <li>
-        	<a href = "ba.html" target="_self"> Business Administration </a> <br>
-        	<a href="mis.html" target="_self"> Management Information Systems </a> <br>
-        	<a href="cs.html" target="_self"> Computer Science </a> <br>
-        	<a href="engineering.html" target="_self"> Engineering </a> <br>
+
+        
+        	<li><a href = "ba.html" target="_self"> Business Administration </a></li> <br>
+        	<li><a href="mis.html" target="_self"> Management Information Systems </a></li> <br>
+        	<li><a href="cs.html" target="_self"> Computer Science </a></li> <br>
+        	<li><a href="engineering.html" target="_self"> Engineering </a></li> <br>
         </li>
 
     	</div><!-- /content -->
@@ -96,6 +93,30 @@
     	</div><!-- /footer -->
 
     </div><!-- /page -->
+
+    <!-- <ul id="slide-out" class="side-nav">
+    <li><div class="user-view">
+      <div class="background">
+        <img src="images/office.jpg">
+      </div>
+      <a href="#!user"><img class="circle" src="images/yuna.jpg"></a>
+      <a href="#!name"><span class="white-text name">John Doe</span></a>
+      <a href="#!email"><span class="white-text email">jdandturk@gmail.com</span></a>
+    </div></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>First Link With Icon</a></li>
+    <li><a href="#!">Second Link</a></li>
+    <li><div class="divider"></div></li>
+    <li><a class="subheader">Subheader</a></li>
+    <li><a class="waves-effect" href="#!">Third Link With Waves</a></li>
+  </ul>
+  <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a> -->
+        
+<script type="text/javascript">
+  
+   $( document ).ready(function(){
+    $(".button-collapse").sideNav();
+  }
+</script>
 
   </body>
 </html>
